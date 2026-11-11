@@ -22,6 +22,22 @@
 
 .eyebrow{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:.1em;margin:0 0 12px}.hero .lead{font-size:18px;line-height:1.55;max-width:650px;color:var(--text)}.hero .value{font-weight:500;color:var(--muted)!important}.hero-actions{display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap;margin:18px 0 8px}.hero-actions .btn{margin:0;min-width:240px}.language-link{color:var(--gold);font-size:14px;text-underline-offset:4px}.reader-note{font-size:12px!important;color:var(--muted)!important}.proof{grid-column:1/-1;font-size:12px;line-height:1.5;color:var(--gold);margin:14px 0 0}.buy-links{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px;grid-column:1/-1}.card .buy-links .btn{margin-top:0;padding:12px 8px;font-size:15px}.card .buy-links .btn span{font-size:11px}.card .sample{grid-column:1/-1;margin-top:12px}.country-note{grid-column:1/-1;font-size:12px;line-height:1.5;color:var(--muted);margin:12px 0 0}.country-note a{color:var(--gold);text-underline-offset:3px}.card{scroll-margin-top:18px}.btn:focus-visible,.language-link:focus-visible,.country-note a:focus-visible{outline:3px solid #fff;outline-offset:4px}
 @media(max-width:680px){.wrap{padding-top:22px}.hero h1{font-size:34px;line-height:1.08}.hero .lead{font-size:16px}.hero .value{font-size:13px!important}.hero-actions{gap:13px}.hero-actions .btn{width:100%;min-width:0}.reader-note{font-size:11px!important}.buy-links{margin-top:9px}.card .proof{margin-top:12px}.card .sample{margin-top:12px}}
+
+/* Ferraille FM: project access from the existing profile link. */
+.project-nav{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:0 0 24px}
+.project-nav a{color:var(--text);text-decoration:none;border:1px solid #40506b;border-radius:999px;padding:10px 16px;font-size:14px;font-weight:750}
+.project-nav .ferraille-entry{color:#c9ff4a;border-color:#627b39;background:#17291c}
+.project-nav a:focus-visible,.ferraille-link:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.ferraille-project{scroll-margin-top:18px;margin-top:24px;border:1px solid #627b39;border-radius:22px;padding:24px;background:linear-gradient(135deg,#10261f,#0c171c)}
+.ferraille-project .project-label{color:#c9ff4a;font-size:12px;font-weight:800;letter-spacing:.1em;margin:0 0 10px}
+.ferraille-project h2{font-size:clamp(27px,6vw,36px);margin:0 0 12px}
+.ferraille-project p{font-size:15px;line-height:1.6;margin:10px 0}
+.ferraille-project .project-intro{font-size:18px;color:#f5f7fb}
+.ferraille-project .ferraille-link{display:block;text-align:center;background:#c9ff4a;color:#102014;font-weight:850;text-decoration:none;border-radius:12px;padding:15px 18px;margin:18px 0}
+.ferraille-link span{display:block;font-size:13px;font-weight:600;margin-top:4px}
+.ferraille-project .project-disclosure{color:#c9d5d7}
+.ferraille-project .project-risk{color:#f5f7fb;border-top:1px solid #3b5148;padding-top:14px;font-size:14px}
+@media(max-width:680px){.project-nav{gap:8px;margin-bottom:22px}.project-nav a{padding:10px 12px;font-size:13px}.ferraille-project{padding:20px}.ferraille-project .project-intro{font-size:17px}}
 </style>
 <!-- TikTok Pixel Code Start -->
 <script>
@@ -38,6 +54,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 
 </head>
 <body><main class="wrap">
+<nav class="project-nav" aria-label="Mes livres et mes projets"><a href="#francais">Mes livres</a><a href="#english" lang="en">Books in English</a><a class="ferraille-entry" href="#ferraille-fm">📻 Ferraille FM</a></nav>
 <section class="hero">
 <div class="author">S.ILLES</div>
 <div class="eyebrow">VOUS UTILISEZ DÉJÀ L’IA ?</div>
@@ -63,8 +80,19 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 <p class="country-note">Shopping from France? <a class="local-edition" href="https://www.amazon.fr/dp/B0HQV8LB8D" target="_blank" rel="noopener noreferrer" data-track="amazon" data-language="en" data-format="kindle" data-asin="B0HQV8LB8D">View the English edition on Amazon.fr</a></p></article>
 </section>
 <section class="insights" aria-labelledby="reading-benefits"><h2 id="reading-benefits">Mieux utiliser l’IA, ça commence par comprendre.</h2><div class="insight-grid"><div><h3>Comprendre les réponses</h3><p>Comment les systèmes produisent leurs réponses et pourquoi ils peuvent se tromper.</p></div><div><h3>Pratiquer avec discernement</h3><p>Formuler une demande, améliorer un résultat par le dialogue et vérifier une réponse convaincante.</p></div><div><h3>Protéger son autonomie</h3><p>Réfléchir aux informations que l’on partage et à la place de l’IA dans le travail et le quotidien.</p></div></div><p class="en" lang="en">Understand AI answers, explore practical uses, and reflect on privacy and autonomy. Accessible without previous technical knowledge. Available in French and English.</p></section>
+
+<section class="ferraille-project" id="ferraille-fm" aria-labelledby="ferraille-title">
+<p class="project-label">MON PROJET CRÉATIF · PUBLICITÉ</p>
+<h2 id="ferraille-title">📻 Ferraille FM</h2>
+<p class="project-intro">Un robot de casse a rallumé son émetteur.<br>Bips cabossés, humour rouillé, fréquence libre.</p>
+<p>Avec Ferraille FM, je souhaite faire vivre cet univers et m’aider à financer mes projets. Les frais que je perçois sur les échanges du jeton peuvent contribuer à ce financement.</p>
+<a class="ferraille-link" href="https://zora.co/coin/base:0xdd2395869e1fa473ac4225ae0755c838e033c95b" target="_blank" rel="noopener noreferrer">Découvrir Ferraille FM sur Zora<span>La création et son jeton crypto $FRFM · réseau Base</span></a>
+<p class="project-disclosure">Je suis le créateur du projet, je détiens des jetons $FRFM et je perçois des frais lorsqu’ils sont échangés.</p>
+<p class="project-risk">Achat facultatif, destiné aux adultes. Cryptoactif à valeur variable : risque de perte, y compris totale, et aucun gain garanti.</p>
+</section>
+
 <p class="note">Choisissez votre langue et votre format · Choose your language and format</p>
-<div class="foot">© 2026 S.ILLES · Les achats sont finalisés sur Amazon / Purchases are completed on Amazon.</div>
+<div class="foot">© 2026 S.ILLES · Les achats de livres sont finalisés sur Amazon / Book purchases are completed on Amazon.</div>
 </main>
 <script>
 document.addEventListener('click', function (event) {
@@ -83,5 +111,6 @@ document.addEventListener('click', function (event) {
 });
 </script>
 </body></html>
+
 
 
